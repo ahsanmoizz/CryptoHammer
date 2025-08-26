@@ -1,0 +1,57 @@
+/* Ensure html and body take full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for the finalize bid page */
+.finalize-bid {
+    background-image: url('../images/new10.jpg'); /* Replace with your auction background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repetition */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* Style for the heading */
+.finalize-bid h1 {
+    font-size: 3rem; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+/* Style for the finalize button */
+.finalize-bid button {
+    background-color: #ff5733; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1.2rem; /* Button text size */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add button shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.finalize-bid button:hover {
+    background-color: #e14a2b; /* Darker color on hover */
+}
+
+/* Optional: Add a content container for better layout */
+.finalize-bid .content {
+    z-index: 2; /* Ensure content appears above the background */
+    max-width: 600px; /* Limit content width */
+    margin: 0 auto; /* Center the content container */
+    padding: 20px; /* Add padding around content */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners */
+}

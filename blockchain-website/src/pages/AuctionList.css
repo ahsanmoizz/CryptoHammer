@@ -1,0 +1,79 @@
+/* Ensure the entire viewport is utilized */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the AuctionList component */
+.auction-list-container {
+    background-image: url('../images/new10.jpg'); /* Replace with your background image */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+}
+
+/* Style for the main heading */
+.auction-list-container h1 {
+    font-size: 3rem; /* Large heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add text shadow */
+}
+
+/* Style for subheadings */
+.auction-list-container h2, 
+.auction-list-container h3 {
+    font-size: 1.8rem; /* Subheading size */
+    margin-bottom: 15px; /* Space below subheading */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+/* Style for the unordered list */
+.auction-list-container ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for individual list items */
+.auction-list-container ul li {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside list items */
+    margin-bottom: 10px; /* Space between list items */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    font-size: 1.2rem; /* Adjust text size */
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+/* Hover effect for list items */
+.auction-list-container ul li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Loading message */
+.auction-list-container p {
+    font-size: 1.5rem; /* Text size for loading message */
+    margin-top: 20px; /* Space above the message */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+/* Optional: Style the content container for better readability */
+.auction-list-container .content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Shadow for the container */
+    max-width: 800px; /* Limit the width of the container */
+    width: 90%; /* Make it responsive */
+}

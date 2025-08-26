@@ -1,0 +1,47 @@
+/* Ensure html and body take full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Style for the createauction section */
+.create-auction {
+    background-image: url('../images/new10.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repetition */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* Style for headings */
+.create-auction h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 20px; /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+/* Style for buttons */
+.create-auction button{
+    background-color: #ff5733; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1.2rem; /* Button text size */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add button shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.create-auction button:hover {
+    background-color: #e14a2b; /* Darker color on hover */
+}
+
